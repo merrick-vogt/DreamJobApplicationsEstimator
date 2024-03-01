@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.title-container {
+    margin-bottom: 10px;
+}
+
+.job-offer-percentage-container,
+.job-success-percentage-container,
+.job-applications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#sliderJobOfferPercentage, #sliderJobSuccessPercentage, #JobApplications {
+    margin-top: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}

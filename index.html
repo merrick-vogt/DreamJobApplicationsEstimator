@@ -1,0 +1,53 @@
+<!-- create an html file that works with the main.js file. 
+the html file should have a title about estimator for number of job applications 
+to get a job. There should be sliders for the input of the js function -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estimator for number of job applications to get a job</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="title-container">
+          <h1>Dream Job Applications Estimator</h1>
+      </div>
+      <div class="job-offer-percentage-container">
+        <div for="jobOfferPercentage">Percentage of job applications that result in a job offer</div>
+        <span id="sliderJobOfferPercentage">5%</span>
+      </div>
+      <div class="job-offer-slider-container">
+        <input
+        type="range"
+        min=".001"
+        max=".1"
+        step="0.001"
+        value="0.05"
+        id="jobOfferPercentage"
+      />
+      <div class="job-success-percentage-container">
+        <div for="jobSuccessPercentage">Percentage that you will receive a job</div>
+        <span id="sliderJobSuccessPercentage">50%</span>
+      </div>
+      <div class="job-success-slider-container">
+        <input
+        type="range"
+        min="0"
+        max=".99"
+        step=".01"
+        value=".5"
+        id="jobSuccessPercentage"
+      />
+      <div class="job-applications-container">
+        <div for="jobApplicationsTitle">Number of job applications</div>
+        <span id="jobApplications">???</span>
+      </div>
+
+  </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
